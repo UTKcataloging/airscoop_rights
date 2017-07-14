@@ -31,9 +31,6 @@
     
     <!-- apply rights statements.org -->
     <xsl:template match="accessCondition">
-        <xsl:copy>
-            <xsl:attribute name="type">local rights statement</xsl:attribute>
-            <xsl:apply-templates/>
-        </xsl:copy>
+        <accessCondition type="use and reproduction" xlink:href="http://rightsstatements.org/vocab/NoC-US/1.0/">No Copyright - United States</accessCondition>
     </xsl:template>
 </xsl:stylesheet>
